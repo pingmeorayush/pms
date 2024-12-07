@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import DootedSeparator from "./dotted-separator";
 import Navigation from "./Navigation";
+import WorkspacesSwitcher from "./workspace-switcher";
 
 const Sidebar = () => {
   return (
@@ -10,6 +11,8 @@ const Sidebar = () => {
       <Link href="/">
         <Image src="/logo.svg" alt="logo" width={164} height={48} />
       </Link>
+      <DootedSeparator className="my-4" />
+      <WorkspacesSwitcher />
       <DootedSeparator className="my-4" />
       <Navigation />
     </aside>
